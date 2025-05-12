@@ -1,0 +1,11 @@
+span#name{
+    display: inline-block;
+    /*border: solid 1px red;*/
+    width: 100px;
+    height: 50px;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+    border-radius: 50%;
+}

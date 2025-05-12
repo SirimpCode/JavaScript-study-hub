@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 에서 변수 선언시 사용되는 var 에 대해서 알아보기</title>
+    <link rel="stylesheet" href="css/01.css">
+    <script type="text/javascript" src="js/01.js" defer></script>
+</head>
+<body>
+<h1>var 변수 사용하기</h1>
+<h2>더하기 계산하기</h2>
+<div>
+    <input type="text" id="num1"/> + <input type="text" id="num2"/> =  <span id="sum"></span>
+</div>
+<div class="div2">
+    <button type="button" onclick="funcSumError()">잘못된 더하기 결과 보기</button>
+    <button type="button" onclick="funcSumSuccess()">정상적인 결과 보기</button>
+    <button type="button" onclick="funcClear()">지우기</button>
+    <br>
+    <button type="button" onclick="funcRotate()">빙글빙글돌리기</button>
+    <br><br>
+    <hr>
+    <h2>빼기 계산하기</h2>
+    <input type="text" id="num3"/> + <input type="text" id="num4"/> =  <span id="minus"></span>
+    <br>
+    <button type="button" onclick="funcMinusSuccess()">정상적인 결과 보기</button>
+    <button type="button" onclick="funcMinusClear()">지우기</button>
+    <br><br>
+    <hr>
+    <h2>계산기얌</h2>
+    <input type="text" id="num5"/>
+    <select id="operator">
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+    <input type="text" id="num6"/>
+    <span onclick="calculation()" style="font-size: 20px; font-weight: bold;">=</span>
+    <span id="calcResult"></span>
+
+</div>
+</body>
+</html>

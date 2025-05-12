@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스크립트 태그 body 태그내의 맨 마지막에 위치해도 됩니다.</title>
+
+</head>
+<body>
+<h1 id="h1"></h1>
+버튼 클릭시 changeH1()함수 실행할거야
+<button id="btn" onclick="changeH1()">버튼</button>
+<br>
+<h2>스크립트 태그는 body 태그내에 위치해도 됩니다.</h2>
+<p id="demo">변경전 p태그</p>
+<button type="button" onclick="changeP()">클릭하세여</button>
+<br><br><br>
+<button type="button" onclick="changingBoth()">위에꺼 둘다 바꿔여</button>
+
+<script type="text/javascript">
+    let h1 = document.getElementById("h1");//여기선 위의 태그가 실행된후 스크립트가 실행되므로 h1의 요소를 시작부터 찾을 수 있다.
+    //h1 id의 요소를 불러와서 값넣기
+    document.addEventListener("DOMContentLoaded", function () {
+        // const h1 = document.getElementById("h1");
+        h1.innerHTML = "헤헤헤헿";
+    });
+    //버튼 클릭시 h1 id의 요소를 불러와서 다른 값넣기
+    function changeH1() {
+        // const h1 = document.getElementById("h1");
+        //h1 요소의 값이 "헤헤헤헿"이면 "버튼 클릭"으로 바꿔라
+        //h1 요소의 값이 "버튼 클릭"이면 "헤헤헤헿"으로 바꿔라
+        if(h1.innerHTML === "헤헤헤헿") {
+            h1.innerHTML = "버튼 클릭";
+        } else {
+            h1.innerHTML = "헤헤헤헿";
+        }
+    }
+    function changeP(){
+        const p = document.getElementById("demo");
+
+        if(p.innerHTML === "변경전 p태그"){// " " 쌍따옴표 안에 쌍따옴표 쓰면 오류나서 안에 홑따옴표 ' '로 감싸줬음
+            p.innerHTML = "<span style='color: brown; font-size: 30px'>변경된 p태그🚀🚀</span>";
+        }else {
+            p.innerHTML = "변경전 p태그";
+        }
+    }
+    function changingBoth(){
+        changeH1();
+        changeP();
+    }
+
+</script>
+</body>
+</html>
