@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+	div#container {
+		/* border: solid 1px gray; */
+		width: 100%;
+		height: 100%;
+		/*margin: 0 auto;*/
+		padding: 2%;
+	}
+	
+	table {
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		border: solid 1px gray;
+		width: 50%;
+		border-collapse: collapse;
+	}
+	
+	td {
+		border: solid 1px gray;
+		height: 50px;
+		text-align: center;
+		font-size: 14pt;
+	}
+	
+	td#current_date_1 { 
+		color: red;
+	}
+	
+	td#current_date_2 {
+		color: blue;
+	}
+
+h2{
+	text-align: center;
+}
+.modal_btn {
+	display: block;
+	margin: 40px auto;
+	padding: 10px 20px;
+	background-color: royalblue;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	transition: box-shadow 0.2s;
+	z-index: 100;
+}
+
+/*모달 팝업 영역 스타일링*/
+.modal {
+	/*팝업 배경*/
+	display: block; /*평소에는 보이지 않도록*/
+	opacity: 0;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background: rgba(0,0,0,0.5);
+	z-index: 1;
+	transition: all 1s ease-in-out;
+}
+.modal .modal_popup {
+	/*팝업*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 20px;
+	z-index: 1;
+}
+.modal .modal_popup .close_btn{
+	display: block;
+	padding: 10px 20px;
+	background-color: rgb(116, 0, 0);
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	transition: box-shadow 0.2s;
+}

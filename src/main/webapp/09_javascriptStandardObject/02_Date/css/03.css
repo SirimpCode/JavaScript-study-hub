@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+div#timer {
+    /* 	border: solid 1px gray; */
+    padding: 30px 0 0 20px;
+    color: blue;
+    font-size: 20pt;
+}
+
+div#quiz_display {
+    margin-top: 30px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+li {
+    line-height: 30px;
+}
+
+div.ox {
+    font-size: 10pt;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+
+button#btnSubmit {
+    border: solid 1px tomato;
+    color: tomato;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button#btnSubmit:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+span#warning {
+    border: solid 1px red;
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+#scoreDisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+ol {
+    position: relative;
+}
+
+ol::before {
+    display: block;
+    content: "";
+}
+
+ol.yes::before {
+    border-radius: 50%;
+    border: solid 3px blue;
+    width: 180px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ol.no::before {
+
+    width: 180px;
+    height: 3px;
+    position: absolute;
+    background-color: red;
+    transform-origin: top left; /* 회전축을 왼쪽 상단으로 설정 */
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+
+}
+
+#scoreDisplay{
+    /*display: none;*/
+    width: 500px;
+    /*height: auto;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 1s;
+    opacity: 0;
+}
+/*#reward {*/
+/*    display: block;*/
+/*    opacity: 0;*/
+/*    width: 100%;*/
+/*    transition: all ease-in-out 1s;*/
+/*}*/
+
+/*ol {*/
+/*	border: 5px solid blue;*/
+/*	border-radius: 50%;*/
+/*z-index: 2;*/
+/*position: relative;*/
+/*}*/

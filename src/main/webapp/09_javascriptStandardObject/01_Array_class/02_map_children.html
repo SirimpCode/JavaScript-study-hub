@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>배열명.map() 메소드와 엘리먼트.children 에 대해서 알아봅니다.</title>
+
+    <link rel="stylesheet" href="css/02.css">
+
+    <script type="text/javascript" src="js/02.js" defer></script>
+
+</head>
+<body>
+<div id="container">
+    <div id="view"></div>
+
+    <hr>
+
+    <table id="tbl">
+        <thead>
+        <tr>
+            <th width="50%">성명</th>
+            <th>점수</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>홍길동</td>
+            <td class="score">90</td>
+        </tr>
+        <tr>
+            <td>엄정화</td>
+            <td class="score">100</td>
+        </tr>
+        <tr>
+            <td>이순신</td>
+            <td class="score">50</td>
+        </tr>
+        <tr>
+            <td>유관순</td>
+            <td class="score">70</td>
+        </tr>
+        <tr>
+            <td>김유신</td>
+            <td class="score">80</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button" id="btn_pass" class="btn">합격자명단 보이기</button>&nbsp;
+                <button type="button" id="btn_clear" class="btn">합격자명단 감추기</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="view_pass"></div>
+    <div id="searchDiv">
+        <label for="searchInput"><span style="font-size: 15px">합격여부 검색 => </span></label>
+        <input type="text" id="searchInput" style="width: 110px" placeholder="이름을 입력하세요."/>
+        <button type="button" id="btnSearch" style="width: 50px; height: 30px; margin-left: 10px" class="btn">검색</button>
+    </div>
+    <div id="sucPassing"></div>
+    <div id="failPassing"></div>
+    <br>
+
+
+
+</div>
+</body>
+
+</html>

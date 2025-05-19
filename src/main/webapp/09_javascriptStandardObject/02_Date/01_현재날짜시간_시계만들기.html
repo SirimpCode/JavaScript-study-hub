@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>현재날짜시간을 이용하여 시계만들기</title>
+    <link rel="stylesheet" href="css/01.css">
+    <script type="text/javascript" src="js/01.js" defer></script>
+</head>
+<body>
+<!--모달 팝업-->
+<div class="modal">
+    <div class="modal_popup">
+        <h3>모달 팝업 타이틀 입니다!</h3>
+        <p>모달 팝업 만들엇디이</p>
+        <p>5초 후 자동으로 닫힙니다.</p>
+        <button type="button" class="close_btn">닫기</button>
+    </div>
+</div>
+
+<div id="container">
+    <table>
+        <tr>
+            <td width="40%">현재날짜시각-1</td>
+            <td id="current_date_1"></td>
+        </tr>
+        <tr>
+            <td>현재날짜시각-2</td>
+            <td id="current_date_2"></td>
+        </tr>
+        <tr>
+            <td>타이머</td>
+            <td id="timer"></td>
+            <td>타이머</td>
+            <td id="timer2"></td>
+        </tr>
+    </table>
+</div>
+<button type="button" class="modal_btn">모달 띄우기</button>
+</body>
+</html>

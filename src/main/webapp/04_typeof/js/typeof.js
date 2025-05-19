@@ -151,4 +151,3 @@ document.getElementById("result_34").innerText = funcMultiply(20,30);
 document.getElementById("result_35").innerText = funcMultiply(20,30);
 document.getElementById("result_36").innerText = funcMultiply(200,3);
 document.getElementById("type_37").innerText = typeof funcMultiply;
-
